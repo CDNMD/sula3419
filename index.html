@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SULA MD V4 - ULTIMATE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --neon-blue: #00f3ff;
+            --neon-pink: #ff00ff;
+            --cyber-black: #0a0a1a;
+            --cyber-gray: #1a1a2e;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Orbitron', sans-serif;
+        }
+        body {
+            background: var(--cyber-black);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .cyber-grid {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 243, 255, 0.1) 1px, transparent 1px), 
+            linear-gradient(90deg, rgba(0, 243, 255, 0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            z-index: 0;
+            animation: gridAnimation 5s infinite linear;
+        }
+        @keyframes gridAnimation {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-30px); }
+        }
+        .main-container {
+            background: rgba(16, 18, 27, 0.95);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 2rem;
+            border: 2px solid var(--neon-blue);
+            box-shadow: 0 0 50px rgba(0, 243, 255, 0.2);
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            width: 90%;
+        }
+        .cyber-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        .cyber-header h1 {
+            color: var(--neon-blue);
+            font-size: 3.5rem;
+            text-shadow: 0 0 30px var(--neon-blue);
+            letter-spacing: 3px;
+            margin-bottom: 1rem;
+        }
+        .button-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            padding: 2rem 0;
+        }
+        .cyber-btn {
+            position: relative;
+            padding: 1.2rem;
+            background: var(--cyber-gray);
+            border: 2px solid var(--neon-blue);
+            border-radius: 10px;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            box-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
+        }
+        .cyber-btn:hover {
+            background: var(--neon-blue);
+            color: var(--cyber-black);
+            transform: scale(1.05);
+        }
+        .cyber-btn:active {
+            background: var(--neon-pink);
+            color: var(--cyber-black);
+            box-shadow: 0 0 20px var(--neon-pink);
+            transform: scale(0.95);
+        }
+        .cyber-footer {
+            margin-top: 3rem;
+            color: var(--neon-blue);
+            text-align: center;
+            font-size: 1rem;
+            text-shadow: 0 0 10px var(--neon-blue);
+        }
+        @media (max-width: 768px) {
+            .main-container {
+                padding: 1.5rem;
+                margin: 1rem;
+            }
+            .cyber-header h1 {
+                font-size: 2.5rem;
+            }
+            .cyber-btn {
+                font-size: 1rem;
+                padding: 1rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cyber-grid"></div>
+    <div class="main-container">
+        <header class="cyber-header">
+            <h1> <i class="fas fa-robot"></i> SULA MD V4 </h1>
+            <p style="color: var(--neon-pink); font-size: 1.2rem;">Ultimate Session Manager</p>
+        </header>
+        <div class="button-grid">
+            <a href="https://asitha.top/qr" class="cyber-btn" target="_blank">
+                <i class="fas fa-qrcode"></i> QR-CODE
+            </a>
+            <a href="https://asitha.top/pair" class="cyber-btn" target="_blank">
+                <i class="fas fa-handshake"></i> PAIRING-CODE
+            </a>
+            <a href="https://github.com/sulaksha449/SULA-MD" class="cyber-btn" target="_blank">
+                <i class="fab fa-github"></i> REPO
+            </a>
+            <a href="https://youtu.be/VPIDwJMVNHM?si=kqnHZqm-jOO4lV5g" class="cyber-btn" target="_blank">
+                <i class="fab fa-youtube"></i> MONGODB CREAT VIDEO
+            </a>
+            <a href="https://whatsapp.com/channel/0029Vb65iOZKwqSNKecV8V07" class="cyber-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> WA-CHANNEL
+            </a>
+        </div>
+    </div>
+    <footer class="cyber-footer"> © 2025 SULA MD | Powered by Sula Chathuranga </footer>
+</body>
+</html>
